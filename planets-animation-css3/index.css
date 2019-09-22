@@ -40,51 +40,6 @@ html, body {
   background: url('./images/sun.png');
   background-size: cover;
 }
-.sun::before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  margin: auto;
-  box-sizing: border-box;
-  border-radius: inherit;
-  width: 120px;
-  height: 120px;
-  -webkit-transform: translateZ(2em);
-          transform: translateZ(2em);
-  animation: pulse 2s infinite;
-}
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 #f7f3d1;
-            box-shadow: 0 0 0 0 #f7f3d1;
-  }
-  70% {
-    -webkit-box-shadow: 0 0 0 10px rgba(14, 171, 49, 0);
-            box-shadow: 0 0 0 10px rgba(14, 171, 49, 0);
-  }
-  100% {
-    -webkit-box-shadow: 0 0 0 0 rgba(14, 171, 49, 0);
-            box-shadow: 0 0 0 0 rgba(14, 171, 49, 0);
-  }
-}
-@keyframes pulse {
-  0% {
-    -moz-box-shadow: 0 0 0 0 #f7f3d1;
-         box-shadow: 0 0 0 0 #f7f3d1;
-  }
-  70% {
-    -moz-box-shadow: 0 0 0 10px rgba(14, 171, 49, 0);
-         box-shadow: 0 0 0 10px rgba(14, 171, 49, 0);
-  }
-  100% {
-    -moz-box-shadow: 0 0 0 0 rgba(14, 171, 49, 0);
-         box-shadow: 0 0 0 0 rgba(14, 171, 49, 0);
-  }
-}
 .orbit {
   position: absolute;
   border: 1px solid #fff;
@@ -337,3 +292,50 @@ html, body {
   }
 }
 /************ pluto start *************/
+
+/************ adding box shadow for sun *************/
+.sun::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: inherit;
+  width: 120px;
+  height: 120px;
+  -webkit-transform: translateZ(2em);
+          transform: translateZ(2em);
+  animation: pulse 2s infinite;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #f7f3d1;
+            box-shadow: 0 0 0 0 #f7f3d1;
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(14, 171, 49, 0);
+            box-shadow: 0 0 0 10px rgba(14, 171, 49, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(14, 171, 49, 0);
+            box-shadow: 0 0 0 0 rgba(14, 171, 49, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 #f7f3d1;
+         box-shadow: 0 0 0 0 #f7f3d1;
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(14, 171, 49, 0);
+         box-shadow: 0 0 0 10px rgba(14, 171, 49, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(14, 171, 49, 0);
+         box-shadow: 0 0 0 0 rgba(14, 171, 49, 0);
+  }
+}
