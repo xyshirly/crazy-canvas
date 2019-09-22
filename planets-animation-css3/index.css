@@ -201,12 +201,11 @@ html, body {
   top: -105px;
   margin-left: -330px;
   animation-duration: 70s;
-  z-index: 15;
 }
 .saturn > .planet {
   width: 122px;
   height: 70px;
-  left: 52px;
+  right: 52px;
   top: 52px;
 }
 .saturn > .planet > .ball {
@@ -223,13 +222,12 @@ html, body {
   top: -165px;
   margin-left: -390px;
   animation-duration: 90s;
-  z-index: 16;
 }
 .uranus > .planet {
   width: 40px;
   height: 40px;
-  left: 92px;
-  top: 92px;
+  bottom: 92px;
+  right: 92px;
 }
 .uranus > .planet > .ball {
   background-image: url('./images/uranus.png');
@@ -250,7 +248,7 @@ html, body {
   width: 38px;
   height: 38px;
   left: 112px;
-  top: 112px;
+  bottom: 112px;
 }
 .neptune > .planet > .ball {
   background-image: url('./images/neptune.png');
@@ -273,7 +271,7 @@ html, body {
   width: 20px;
   height: 20px;
   left: 138px;
-  top: 138px;
+  bottom: 138px;
 }
 .pluto > .planet > .ball {
   background-image: url('./images/pluto.png');
