@@ -245,7 +245,6 @@ html, body {
   top: -225px;
   margin-left: -450px;
   animation-duration: 100s;
-  z-index: 16;
 }
 .neptune > .planet {
   width: 38px;
@@ -258,3 +257,34 @@ html, body {
   animation-duration: 100s;
 }
 /************ neptune start *************/
+
+/************ pluto start *************/
+.pluto {
+  width: 1000px;
+  height: 1000px;
+  left: 50%;
+  top: -325px;
+  margin-left: -430px;
+  animation-duration: 110s;
+  transform: rotateX(75deg) rotateY(-25deg) rotateZ(90deg);
+  animation-name: plutorotate;
+}
+.pluto > .planet {
+  width: 20px;
+  height: 20px;
+  left: 138px;
+  top: 138px;
+}
+.pluto > .planet > .ball {
+  background-image: url('./images/pluto.png');
+  animation-duration: 110s;
+}
+@keyframes plutorotate {
+  0% {
+    transform: rotateX(75deg) rotateY(-25deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(75deg) rotateY(-25deg) rotateZ(-360deg);
+  }
+}
+/************ pluto start *************/
