@@ -9,3 +9,6 @@ This repository is to show some crazy demos about canvas, css3, svg or webgl.
 2.animating planets
 <br/>
 <img src="./demos-image/planets-animation.png" width = "300" height = "200" alt="animating planets" align=center />
+
+3.radar scanning
+<img src="./demos-image/radar-scanning.png" width="300" height="200" alt="radar scanning" align=center>
